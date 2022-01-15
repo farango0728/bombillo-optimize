@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultado de optimización de Bombillas</title>
+    <style>
+      .tableoptimize td {
+        padding: 2rem;
+        vertical-align: middle;
+        text-align: center;
+      }
+      td.legend {
+        padding: 1rem;
+      }
+      td.item0 {
+        background: #f7fb0052;
+      }
+      td.item1 {
+        background: #4a3128d9;
+      }
+      td.item2 {
+        background: #f7fb00ad;
+      }
+      h3 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table align="center">
+      <tr>
+        <td>Cuarto</td>
+        <td class="item0 legend"></td>
+      </tr>
+      <tr>
+        <td>Pared</td>
+        <td class="item1 legend"></td>
+      </tr>
+      <tr>
+        <td>Bombillo</td>
+        <td class="item2 legend"></td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <h3>Última matriz generada correctamente: <%= last_date %></h3>
+    <table class="tableoptimize" align="center">
+      <% matriz.forEach(function(dat) { %>
+      <tr>
+        <% dat.forEach(function(itm) { %>
+        <td class="item<%= itm %>"></td>
+        <% }); %>
+      </tr>
+      <% }); %>
+    </table>
+  </body>
+</html>

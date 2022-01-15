@@ -1,0 +1,35 @@
+{
+  "name": "apinode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -L api.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "jwt-simple": "^0.5.6",
+    "nodemon": "^2.0.15",
+    "npm": "^8.3.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express-fileupload": "^1.2.1",
+    "filereader": "^0.10.3",
+    "joi": "^14.3.1",
+    "lodash": "^4.17.15",
+    "mime-types": "^2.1.25",
+    "node-forge": "^1.2.1",
+    "remove": "^0.1.5",
+    "uuid": "^3.3.3"
+  }
+}
